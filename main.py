@@ -1,6 +1,6 @@
 f = open("text.txt")
 
-word_f = input("Intup your word ---> ")
+word_f = input("Введіть слово--> ")
 
 p = False
 for lines in f.read().split("\n\n"):
@@ -8,4 +8,4 @@ for lines in f.read().split("\n\n"):
         print(f"---------\n{lines}")
         p = True
 if p == False:
-    print("There is no such word (")
+    print("Такого слова немає!")
